@@ -76,7 +76,7 @@ end;
 implementation
 
 uses
-  Vcl.Dialogs;
+  Vcl.Dialogs, System.SysUtils;
 
 
 { TValidador }
@@ -135,7 +135,7 @@ end;
 function TValidador.complemento(scomplemento :string): iValidador;
 begin
   result := self;
-  Fcomplemento := scomplemento;
+  Fcomplemento := UPPERCASE(scomplemento);
 end;
 
 function TValidador.documento(sdocumento:string): iValidador;
