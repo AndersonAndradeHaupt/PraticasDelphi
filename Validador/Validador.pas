@@ -9,22 +9,6 @@ uses
 
   TTipoDoc = class
    private
-    Fcpf:TACBrValTipoDocto;
-    Fcnpj :TACBrValTipoDocto;
-    Fpis :TACBrValTipoDocto;
-    FInscEst :TACBrValTipoDocto;
-    FNumCheque :TACBrValTipoDocto;
-    FCEP :TACBrValTipoDocto;
-    FCartaoCredito :TACBrValTipoDocto;
-    FSuframa :TACBrValTipoDocto;
-    FGTIN  :TACBrValTipoDocto;
-    FRenavam  :TACBrValTipoDocto;
-    FEmail :TACBrValTipoDocto;
-    FCNH :TACBrValTipoDocto;
-    FPrefixoGTIN:TACBrValTipoDocto;
-    FCAEPF:TACBrValTipoDocto;
-    FPlacaMercosul :TACBrValTipoDocto;
-    FCNS :TACBrValTipoDocto;
   public
     class function CPF: TACBrValTipoDocto;
     class function CNPJ: TACBrValTipoDocto;
