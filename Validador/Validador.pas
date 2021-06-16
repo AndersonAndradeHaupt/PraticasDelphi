@@ -8,7 +8,6 @@ uses
  type
 
   TTipoDoc = class
-   private
   public
     class function CPF: TACBrValTipoDocto;
     class function CNPJ: TACBrValTipoDocto;
@@ -35,7 +34,6 @@ uses
     Fcomplemento: string;
     FTipoDocumento :TACBrValTipoDocto;
     procedure Setcomponente(const Value: TACBrValidador);
-    procedure Setcomplemento(const Value: string);
 
   public
     constructor Create;
@@ -86,11 +84,6 @@ end;
 class function TValidador.New: iValidador;
 begin
   result := self.Create;
-end;
-
-procedure TValidador.Setcomplemento(const Value: string);
-begin
-  Fcomplemento := Value;
 end;
 
 procedure TValidador.Setcomponente(const Value: TACBrValidador);
